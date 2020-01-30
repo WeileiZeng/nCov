@@ -2,10 +2,7 @@ $(
     function () {
         
         update_china("china");
-        update_province("安徽省","anhui");
-        update_province("河北省","hebei");
-        update_province("湖北省","hubei");
-        update_province("浙江省","zhejiang");
+        update_province("广东省","guangdong");
          
     }
 );
