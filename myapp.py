@@ -122,7 +122,7 @@ def update_china_data(unit=3600 * 2):
     return p_data
 
 
-def china_map(data)-> Map:
+def china_map(data) -> Map:
     opt= [
         {"min":1001,"color":'#731919'},
         {"min":500,"max":1000,"color":'red'},
