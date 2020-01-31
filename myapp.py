@@ -122,7 +122,7 @@ def update_china_data(unit=3600 * 2):
     return p_data
 
 
-def china_map(data) -> Map:
+def china_map(data):
     opt= [
         {"min":1001,"color":'#731919'},
         {"min":500,"max":1000,"color":'red'},
@@ -148,7 +148,7 @@ def china_map(data) -> Map:
 
 
 
-def province_map(cities_data,province) -> Map:
+def province_map(cities_data,province):
     
     opt= [
         {"min":100,"color":'#731919'},
@@ -174,7 +174,7 @@ def province_map(cities_data,province) -> Map:
     )
     return c
 
-def rank_bar(map_data,name) -> Bar:
+def rank_bar(map_data,name):
     attr = []
     value = []
     for i in map_data:
@@ -263,6 +263,6 @@ def get_prank(provinceName):
 
 if __name__ == "__main__":
     #to host it locally for a test
-    #app.run(host="0.0.0.0",port=5000,debug=True)
+    app.run(host="0.0.0.0",port=5000,debug=True)
     #to deploy it into static website
-    app.run(debug=True)
+    #app.run(debug=True)
